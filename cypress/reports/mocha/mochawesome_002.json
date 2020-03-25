@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-03-24T17:43:55.340Z",
+    "end": "2020-03-24T17:45:19.977Z",
+    "duration": 84637,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "eb4e5862-62bf-4aae-bcb5-6a6ec5e15c2f",
+      "title": "",
+      "fullFile": "cypress\\integration\\draw\\draw.spec.js",
+      "file": "cypress\\integration\\draw\\draw.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f0123228-9473-4e64-90d0-5badbd4fbb2e",
+          "title": "Should draw with shom Drawing tools",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should draw a label",
+              "fullTitle": "Should draw with shom Drawing tools should draw a label",
+              "timedOut": null,
+              "duration": 25773,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#drawing-add-text-button').click();\ncy.get('#map-container').click(600, 280);\ncy.get('#feature-text').click();\ncy.wait(5000);\ncy.get('#feature-text').clear().type('Maldive');\ncy.get('#text-font-arial').click();\ncy.get('fieldset.drawing-feature-style:nth-child(3) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > label:nth-child(2)').click();\ncy.get('#text-size').click();\ncy.wait(5000);\ncy.get('#text-size').clear().type('50');\ncy.get('input.btn').click();\ncy.get('#feature-text').should('have.value', 'Maldive');\ncy.get('#text-size').should('have.value', '50');\ncy.get('#drawing-action-print-button').click();\nPrintPopUp('Label for test', 'Add a Label for testing');",
+              "err": {},
+              "uuid": "96c5dba7-d5ce-4498-91c9-70c0d9e67a02",
+              "parentUUID": "f0123228-9473-4e64-90d0-5badbd4fbb2e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should add a point",
+              "fullTitle": "Should draw with shom Drawing tools should add a point",
+              "timedOut": null,
+              "duration": 12931,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#drawing-add-marker-button').click();\ncy.get('#map-container').click(600, 280);\ncy.get('input.btn').click();\ncy.get('#drawing-action-print-button').click();\nPrintPopUp('Point for test', 'Add a point for testing');",
+              "err": {},
+              "uuid": "de313cc6-e824-431f-ae84-62fbc7ffcdcd",
+              "parentUUID": "f0123228-9473-4e64-90d0-5badbd4fbb2e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should draw a line",
+              "fullTitle": "Should draw with shom Drawing tools should draw a line",
+              "timedOut": null,
+              "duration": 14648,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#drawing-add-line-button').click();\ncy.get('#map-container').click(600, 280);\ncy.get('#map-container').click(600, 350);\ncy.get('#map-container').click(500, 350);\ncy.get('#map-container').dblclick(500, 380);\ncy.get('#stroke-thickness').click();\ncy.wait(2000);\ncy.get('#stroke-thickness').clear().type('10');\ncy.get('input.btn').click();\ncy.get('#drawing-action-print-button').click();\nPrintPopUp('Line for test', 'Add a line for testing');",
+              "err": {},
+              "uuid": "28bfa136-6515-4b92-9f23-2d008d9b4261",
+              "parentUUID": "f0123228-9473-4e64-90d0-5badbd4fbb2e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should draw a polygon",
+              "fullTitle": "Should draw with shom Drawing tools should draw a polygon",
+              "timedOut": null,
+              "duration": 14852,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#drawing-add-polygon-button').click();\ncy.get('#map-container').click(600, 280);\ncy.get('#map-container').click(600, 350);\ncy.get('#map-container').click(500, 350);\ncy.get('#map-container').dblclick(500, 380);\ncy.get('#stroke-thickness').click();\ncy.wait(2000);\ncy.get('#stroke-thickness').clear().type('10');\ncy.get('input.btn').click();\ncy.get('#drawing-action-print-button').click();\nPrintPopUp('Polygon for test', 'Add a polygon for testing');",
+              "err": {},
+              "uuid": "926fac72-c4e0-44f7-9489-405a9bc397f6",
+              "parentUUID": "f0123228-9473-4e64-90d0-5badbd4fbb2e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should draw a circle",
+              "fullTitle": "Should draw with shom Drawing tools should draw a circle",
+              "timedOut": null,
+              "duration": 14357,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#drawing-add-circle-button').click();\ncy.get('#map-container').click(600, 280);\ncy.get('#map-container').dblclick(500, 350);\ncy.get('#stroke-thickness').click();\ncy.wait(2000);\ncy.get('#stroke-thickness').clear().type('10');\ncy.get('input.btn').click();\ncy.get('#drawing-action-print-button').click();\nPrintPopUp('Circle for test', 'Add a circle for testing');",
+              "err": {},
+              "uuid": "5aedff4d-55fc-42c5-9524-bfe93b556679",
+              "parentUUID": "f0123228-9473-4e64-90d0-5badbd4fbb2e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "96c5dba7-d5ce-4498-91c9-70c0d9e67a02",
+            "de313cc6-e824-431f-ae84-62fbc7ffcdcd",
+            "28bfa136-6515-4b92-9f23-2d008d9b4261",
+            "926fac72-c4e0-44f7-9489-405a9bc397f6",
+            "5aedff4d-55fc-42c5-9524-bfe93b556679"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 82561,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
